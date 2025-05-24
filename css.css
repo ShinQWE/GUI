@@ -1,0 +1,259 @@
+#tabs {
+    width: 100%;
+    font-family: Arial, sans-serif; /* Устанавливаем шрифт */
+}
+
+.tab-headers {
+    display: flex;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px; /* Скругляем углы */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+}
+
+.tab-header {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    background-color: #e7e7e7;
+    border-bottom: none; /* Убираем нижнюю границу, чтобы она не перекрывала содержимое */
+    border-radius: 5px 5px 0 0; /* Скругляем верхние углы */
+    transition: background-color 0.3s ease; /* Плавный переход цвета фона */
+}
+
+.tab-header:hover {
+    background-color: #d1d1d1; /* Цвет при наведении */
+}
+
+.tab-header.active {
+    background-color: #fff; /* Цвет активной вкладки */
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для активной вкладки */
+}
+
+.tab-contents {
+    border: 2px solid #ccc;
+    border-radius: 0 0 5px 5px; /* Скругляем нижние углы */
+    padding: 20px;
+    background-color: #fff; /* Фон для содержимого вкладок */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+}
+
+.tab-content {
+    display: none; /* Скрыть все содержимое вкладок по умолчанию */
+}
+
+.tab-content.active {
+    display: block; /* Показать только активное содержимое вкладки */
+}
+
+.nested {
+    margin: 10px 0; /* Отступы между элементами */
+}
+
+label {
+    display: block; /* Отображаем метки как блочные элементы */
+    margin-bottom: 5px; /* Отступ ниже меток */
+    font-weight: bold; /* Жирный текст для меток */
+}
+
+input[type="number"],
+select {
+    width: 100%; /* Полная ширина для полей ввода и селектов */
+    padding: 10px; /* Отступы внутри полей */
+    margin-bottom: 10px; /* Отступ ниже полей */
+    border: 1px solid #ccc; /* Граница */
+    border-radius: 5px; /* Скругляем углы */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Внутренняя тень */
+    transition: border-color 0.3s ease; /* Плавный переход цвета границы */
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #007bff; /* Цвет границы при фокусе */
+    outline: none; /* Убираем обводку */
+}
+
+button {
+    padding: 10px 20px; /* Отступы внутри кнопок */
+    background-color: #06315e; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Скругляем углы */
+    cursor: pointer; /* Указатель для курсора */
+    transition: background-color 0.3s ease; /* Плавный переход цвета фона */
+}
+
+button:hover {
+    background-color: #30363c; /* Цвет фона при наведении */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.action-buttons {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #06315e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Отступ между кнопками */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #30363c;
+}
+
+#tabs {
+    width: 100%;
+}
+
+.tab-headers {
+    display: flex;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.tab-header {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    background-color: #e7e7e7;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.3s ease;
+}
+
+.tab-header:hover {
+    background-color: #d1d1d1;
+}
+
+.tab-contents {
+    border: 2px solid #ccc;
+    border-radius: 0 0 5px 5px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.nested {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#notification {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Стили для раскрывающихся секций */
+.collapsible-section {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.section-header {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    border-radius: 5px 5px 0 0;
+}
+
+.section-header:hover {
+    background-color: #7adb7f;
+}
+
+.section-header.active {
+    background-color: #59a05b;
+}
+
+.section-content {
+    padding: 15px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Стили для вложенных элементов */
+.nested {
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.symptom-wrapper {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+.characteristics {
+    margin-top: 10px;
+    padding-left: 15px;
+    border-left: 2px solid #385039;
+}
+
+label {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+select, input[type="number"] {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #2c3e50;
+    margin: 15px 0 10px 0;
+    font-size: 18px;
+}
